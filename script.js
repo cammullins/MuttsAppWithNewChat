@@ -131,12 +131,16 @@ const createChatBubble = (msg) => {
  
 
 
+
+/*
+ * Our first post request example
+ */
  function newUser() {
      let postData = {
-         "first_name": "Amber",
-         "last_name": "Vauthier",
-         "username": "amberV",
-         "photo_url": ""
+         first_name: "",
+         last_name: "",
+         username: "",
+         photo_url: ""
      }
      let postParams = {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
