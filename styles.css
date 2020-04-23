@@ -19,6 +19,7 @@ header {
     height: 75px;
     width: 100vw;
     background-color: #ededed;
+    display: flex;
 }
 /* === Left side of the header ===*/
 #header-sidebar{
@@ -58,6 +59,22 @@ header {
 #header-main{
     width: 60%;
     height: 100%;
+    display: flex;
+}
+
+#chat-name-section, #header-main-icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#chat-name-section {
+    width: calc(85% - 95px);
+    padding-left: 20px;
+}
+
+#chat-name{
+    margin: 0;
 }
 
 .main-content {
@@ -182,12 +199,13 @@ header {
 }
 
 .chat-bubble {
-     padding: 6px 7px 8px 9px;
-     border-radius: 10px;
-     max-width: 75%;
-     position: relative;
-     font-size: .95em;
-     background-color: #ffffff;
+    padding: 6px 7px 8px 9px;
+    border-radius: 10px;
+    max-width: 75%;
+    position: relative;
+    font-size: .95em;
+    background-color: #ffffff;
+    margin-bottom: 8px;
 }
 
 .chat-bubble:before{
